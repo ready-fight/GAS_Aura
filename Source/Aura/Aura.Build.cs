@@ -1,5 +1,3 @@
-
-
 using UnrealBuildTool;
 
 public class Aura : ModuleRules
