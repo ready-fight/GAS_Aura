@@ -3,8 +3,11 @@ DerivedDataCache
 Intermediate
 Saved
 Build
-Content
 Plugins
+Content/Assets
+Content/Maps
+Content/Collections
+Content/Developers
 
 .vscode
 .vs
