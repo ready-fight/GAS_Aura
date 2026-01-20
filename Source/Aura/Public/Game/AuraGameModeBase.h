@@ -6,6 +6,7 @@
 #include "GameFramework/GameModeBase.h"
 #include "AuraGameModeBase.generated.h"
 
+class UAuraUserWidget;
 /**
  * 
  */
@@ -13,5 +14,4 @@ UCLASS()
 class AURA_API AAuraGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
 };
