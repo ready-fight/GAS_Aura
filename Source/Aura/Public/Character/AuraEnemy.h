@@ -1,10 +1,9 @@
-// Copyright Druid Mechanics
-
 #pragma once
 
 #include "CoreMinimal.h"
 #include "Character/AuraCharacterBase.h"
 #include "Interaction/EnemyInterface.h"
+#include "UI/WidgetController/OverlayWidgetController.h"
 #include "AuraEnemy.generated.h"
 
 class UWidgetComponent;
@@ -26,6 +25,12 @@ public:
 	/** Combat Interface */
 	virtual int32 GetPlayerLevel() override;
 	/** end Combat Interface */
+
+	UPROPERTY(BlueprintAssignable)
+	FOnAttributeChangedSignature OnHealthChanged;
+	
+	UPROPERTY(BlueprintAssignable)
+	FOnAttributeChangedSignature OnMaxHealthChanged;
 	
 protected:
 	virtual void BeginPlay() override;
