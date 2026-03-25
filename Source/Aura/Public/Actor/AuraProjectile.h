@@ -21,8 +21,8 @@ public:
 
 	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UProjectileMovementComponent> ProjectileMovement;
-	
-	UPROPERTY(BlueprintReadWrite, meta = (ExposedOnSpawn  = true))
+
+	UPROPERTY(BlueprintReadWrite, meta = (ExposeOnSpawn = true))
 	FGameplayEffectSpecHandle DamageEffectSpecHandle;
 
 protected:

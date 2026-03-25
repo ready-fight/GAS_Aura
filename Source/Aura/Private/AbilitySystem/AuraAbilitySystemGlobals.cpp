@@ -1,4 +1,4 @@
-
+// Copyright Druid Mechanics
 
 
 #include "AbilitySystem/AuraAbilitySystemGlobals.h"
@@ -9,4 +9,3 @@ FGameplayEffectContext* UAuraAbilitySystemGlobals::AllocGameplayEffectContext() 
 {
 	return new FAuraGameplayEffectContext();
 }
-

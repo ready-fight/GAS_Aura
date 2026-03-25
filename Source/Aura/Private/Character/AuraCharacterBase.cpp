@@ -3,7 +3,6 @@
 
 #include "Character/AuraCharacterBase.h"
 #include "AbilitySystemComponent.h"
-#include "AudioMixerBlueprintLibrary.h"
 #include "AbilitySystem/AuraAbilitySystemComponent.h"
 #include "Aura/Aura.h"
 #include "Components/CapsuleComponent.h"
@@ -52,7 +51,6 @@ void AAuraCharacterBase::MulticastHandleDeath_Implementation()
 	
 	GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	Dissolve();
-	
 }
 
 void AAuraCharacterBase::BeginPlay()
@@ -104,7 +102,6 @@ void AAuraCharacterBase::Dissolve()
 		GetMesh()->SetMaterial(0, DynamicMatInst);
 		StartDissolveTimeline(DynamicMatInst);
 	}
-	
 	if (IsValid(WeaponDissolveMaterialInstance))
 	{
 		UMaterialInstanceDynamic* DynamicMatInst = UMaterialInstanceDynamic::Create(WeaponDissolveMaterialInstance, this);
@@ -112,3 +109,4 @@ void AAuraCharacterBase::Dissolve()
 		StartWeaponDissolveTimeline(DynamicMatInst);
 	}
 }
+

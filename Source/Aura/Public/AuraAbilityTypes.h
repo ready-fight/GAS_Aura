@@ -23,9 +23,9 @@ public:
 	}
 
 	/** Creates a copy of this context, used to duplicate for later modifications */
-	virtual FAuraGameplayEffectContext* Duplicate() const
+	virtual FGameplayEffectContext* Duplicate() const
 	{
-		FAuraGameplayEffectContext* NewContext = new FAuraGameplayEffectContext();
+		FGameplayEffectContext* NewContext = new FGameplayEffectContext();
 		*NewContext = *this;
 		if (GetHitResult())
 		{
